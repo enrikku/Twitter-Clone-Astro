@@ -1,0 +1,22 @@
+---
+import Layout from "@layouts/Layout.astro";
+import NavBar from "@components/NavBar.astro";
+---
+
+<Layout title="Welcome to Astro." class:list={["grid", "grid-cols-3", "gap-4"]}>
+  <!-- Navbar in the first column -->
+  <div class="col-span-1 border">
+    <NavBar />
+  </div>
+  
+  <!-- Main content in the next two columns -->
+  <div class="col-span-2 border">
+    <div>
+      <h1>Home</h1>
+    </div>
+    <div>
+      <!-- Aquí puedes agregar más contenido -->
+      <p>Welcome to the home page. Here is some additional content.</p>
+    </div>
+  </div>
+</Layout>
