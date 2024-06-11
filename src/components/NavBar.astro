@@ -1,5 +1,5 @@
 ---
-import IconX from "@icons/IconX.astro"; 
+import IconX from "@icons/IconX.astro";
 import IconHome from "@icons/IconHome.astro";
 import IconSearch from "@icons/IconSearch.astro";
 import IconNotification from "@icons/IconNotification.astro";
@@ -9,18 +9,33 @@ import IconProfile from "@icons/IconProfile.astro";
 import IconMoreOptions from "@icons/IconMoreOptions.astro";
 ---
 
-<nav>
-    <ul>
-        <li class="w-[30px]"><a href="/"><IconX /></a></li>
-    </ul>
-    <ul>
-        <li class="w-[30px]"><a href="/" class="text-white"><IconHome />Home</a></li>
-        <li class="w-[30px]"><a href="/search" class="text-white"><IconSearch />Search</a></li>
-        <li class="w-[30px]"><a href="/notifications" class="text-white"><IconNotification />Notifications</a></li>
-        <li class="w-[30px]"><a href="/messages" class="text-white"><IconMessage />Messages</a></li>
-        <li class="w-[30px]"><a href="/friends" class="text-white"><IconFriends />Friends</a></li>
-        <li class="w-[30px]"><a href="/profile" class="text-white"><IconProfile />Profile</a></li>
-        <li class="w-[30px]"><a href="/more" class="text-white"><IconMoreOptions />More</a></li>
-    </ul>
-    <button> Postear </button>
+<nav class="border grid-cols-1">
+  <ul>
+    <li class="w-[30px]"><a href="/"><IconX /></a></li>
+  </ul>
+  <ul>
+    <li class="w-[30px]">
+      <a href="/" class="text-white"><IconHome />Home</a>
+    </li>
+    <li class="w-[30px]">
+      <a href="/search" class="text-white"><IconSearch />Search</a>
+    </li>
+    <li class="w-[30px]">
+      <a href="/notifications" class="text-white"
+        ><IconNotification />Notifications</a>
+    </li>
+    <li class="w-[30px]">
+      <a href="/messages" class="text-white"><IconMessage />Messages</a>
+    </li>
+    <li class="w-[30px]">
+      <a href="/friends" class="text-white"><IconFriends />Friends</a>
+    </li>
+    <li class="w-[30px]">
+      <a href="/profile" class="text-white"><IconProfile />Profile</a>
+    </li>
+    <li class="w-[30px]">
+      <a href="/more" class="text-white"><IconMoreOptions />More</a>
+    </li>
+  </ul>
+  <button class="bg-twitter-blue text-white p-6 rounded-full w-1/2 font-bold"> Postear </button>
 </nav>
